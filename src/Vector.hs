@@ -1,4 +1,6 @@
--- Basic start for a vector
+-- Basic start for a vector, this is all going to have to change to work
+-- well with parralell stuff. Will do that later.
+
 module Vector where
 import Prelude
 
@@ -8,6 +10,7 @@ data Vector = Vector { X :: Double,
                        W :: Double -- Matrix stuff
                      } deriving (Eq, Ord)
 
+type SparseVector = [(Int,Double)]
 type Postion = Vector
 type Direction = Vector
 
